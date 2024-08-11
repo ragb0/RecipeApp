@@ -12,14 +12,12 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.example.easyfood.R
-import com.example.easyfood.adapters.FavoriteMealsRecyclerAdapter
-import com.example.easyfood.data.pojo.Meal
-import com.example.easyfood.data.pojo.MealDB
-import com.example.easyfood.data.pojo.MealDetail
+import com.example.easyfood.Adapters.FavoriteMealsRecyclerAdapter
+import com.example.easyfood.data.Models.MealDB
+import com.example.easyfood.data.Models.MealDetail
 import com.example.easyfood.databinding.FragmentFavoriteMealsBinding
-import com.example.easyfood.mvvm.DetailsMVVM
+import com.example.easyfood.ViewModel.DetailsViewModel
 import com.example.easyfood.ui.activites.MealDetailesActivity
-import com.example.easyfood.ui.fragments.HomeFragment
 import com.example.easyfood.ui.fragments.HomeFragment.Companion.CATEGORY_NAME
 import com.example.easyfood.ui.fragments.HomeFragment.Companion.MEAL_AREA
 import com.example.easyfood.ui.fragments.HomeFragment.Companion.MEAL_ID
@@ -33,12 +31,12 @@ class FavoriteMeals : Fragment() {
     lateinit var recView:RecyclerView
     lateinit var fBinding:FragmentFavoriteMealsBinding
     private lateinit var myAdapter:FavoriteMealsRecyclerAdapter
-    private lateinit var detailsMVVM: DetailsMVVM
+    private lateinit var detailsMVVM: DetailsViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         myAdapter = FavoriteMealsRecyclerAdapter()
-        detailsMVVM = ViewModelProviders.of(this)[DetailsMVVM::class.java]
+        detailsMVVM = ViewModelProviders.of(this)[DetailsViewModel::class.java]
     }
 
     override fun onCreateView(

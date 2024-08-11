@@ -10,19 +10,18 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.easyfood.R
-import com.example.easyfood.adapters.MealRecyclerAdapter
-import com.example.easyfood.adapters.SetOnMealClickListener
-import com.example.easyfood.data.pojo.Meal
+import com.example.easyfood.Adapters.MealRecyclerAdapter
+import com.example.easyfood.Adapters.SetOnMealClickListener
+import com.example.easyfood.data.Models.Meal
 import com.example.easyfood.databinding.ActivityCategoriesBinding
-import com.example.easyfood.mvvm.MealActivityMVVM
-import com.example.easyfood.ui.fragments.HomeFragment
+import com.example.easyfood.ViewModel.MealActivityViewModel
 import com.example.easyfood.ui.fragments.HomeFragment.Companion.CATEGORY_NAME
 import com.example.easyfood.ui.fragments.HomeFragment.Companion.MEAL_ID
 import com.example.easyfood.ui.fragments.HomeFragment.Companion.MEAL_STR
 import com.example.easyfood.ui.fragments.HomeFragment.Companion.MEAL_THUMB
 
 class MealActivity : AppCompatActivity() {
-    private lateinit var mealActivityMvvm: MealActivityMVVM
+    private lateinit var mealActivityMvvm: MealActivityViewModel
     private lateinit var binding: ActivityCategoriesBinding
     private lateinit var myAdapter: MealRecyclerAdapter
     private var categoryNme = ""
@@ -30,7 +29,7 @@ class MealActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityCategoriesBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        mealActivityMvvm = ViewModelProviders.of(this)[MealActivityMVVM::class.java]
+        mealActivityMvvm = ViewModelProviders.of(this)[MealActivityViewModel::class.java]
         startLoading()
         prepareRecyclerView()
         mealActivityMvvm.getMealsByCategory(getCategory())

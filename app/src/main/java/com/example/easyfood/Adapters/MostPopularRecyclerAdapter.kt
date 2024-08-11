@@ -1,13 +1,12 @@
-package com.example.easyfood.adapters
+package com.example.easyfood.Adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.easyfood.data.pojo.Meal
+import com.example.easyfood.data.Models.Meal
 import com.example.easyfood.databinding.MostPopularCardBinding
-import com.google.android.material.transition.Hold
 
 class MostPopularRecyclerAdapter : RecyclerView.Adapter<MostPopularRecyclerAdapter.MostPopularMealViewHolder>(){
     private var mealsList: List<Meal> = ArrayList()

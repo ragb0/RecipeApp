@@ -10,12 +10,11 @@ import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.bumptech.glide.Glide
-import com.example.easyfood.adapters.MealRecyclerAdapter
-import com.example.easyfood.data.pojo.MealDetail
+import com.example.easyfood.Adapters.MealRecyclerAdapter
+import com.example.easyfood.data.Models.MealDetail
 import com.example.easyfood.databinding.FragmentSearchBinding
-import com.example.easyfood.mvvm.SearchMVVM
+import com.example.easyfood.ViewModel.SearchViewModel
 import com.example.easyfood.ui.activites.MealDetailesActivity
-import com.example.easyfood.ui.fragments.HomeFragment
 import com.example.easyfood.ui.fragments.HomeFragment.Companion.MEAL_ID
 import com.example.easyfood.ui.fragments.HomeFragment.Companion.MEAL_STR
 import com.example.easyfood.ui.fragments.HomeFragment.Companion.MEAL_THUMB
@@ -23,7 +22,7 @@ import com.example.easyfood.ui.fragments.HomeFragment.Companion.MEAL_THUMB
 class SearchFragment : Fragment() {
     private lateinit var myAdapter: MealRecyclerAdapter
     private lateinit var binding: FragmentSearchBinding
-    private lateinit var searchMvvm: SearchMVVM
+    private lateinit var searchMvvm: SearchViewModel
     private var mealId = ""
     private var mealStr = ""
     private var mealThub = ""
@@ -32,7 +31,7 @@ class SearchFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         myAdapter = MealRecyclerAdapter()
-        searchMvvm = ViewModelProviders.of(this)[SearchMVVM::class.java]
+        searchMvvm = ViewModelProviders.of(this)[SearchViewModel::class.java]
     }
 
     override fun onCreateView(

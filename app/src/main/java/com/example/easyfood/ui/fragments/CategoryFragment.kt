@@ -10,25 +10,24 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.easyfood.R
-import com.example.easyfood.adapters.CategoriesRecyclerAdapter
-import com.example.easyfood.data.pojo.Category
+import com.example.easyfood.Adapters.CategoriesAdapter
+import com.example.easyfood.data.Models.Category
 import com.example.easyfood.databinding.FragmentCategoryBinding
-import com.example.easyfood.mvvm.CategoryMVVM
+import com.example.easyfood.ViewModel.CategoryViewModel
 import com.example.easyfood.ui.activites.MealActivity
-import com.example.easyfood.ui.fragments.HomeFragment
 import com.example.easyfood.ui.fragments.HomeFragment.Companion.CATEGORY_NAME
 
 
 class CategoryFragment : Fragment(R.layout.fragment_category) {
     private lateinit var binding:FragmentCategoryBinding
-    private lateinit var myAdapter:CategoriesRecyclerAdapter
-    private lateinit var categoryMvvm:CategoryMVVM
+    private lateinit var myAdapter:CategoriesAdapter
+    private lateinit var categoryViewModel:CategoryViewModel
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        myAdapter = CategoriesRecyclerAdapter()
-        categoryMvvm = ViewModelProviders.of(this)[CategoryMVVM::class.java]
+        myAdapter = CategoriesAdapter()
+        categoryViewModel = ViewModelProviders.of(this)[CategoryViewModel::class.java]
     }
 
     override fun onCreateView(
@@ -48,7 +47,7 @@ class CategoryFragment : Fragment(R.layout.fragment_category) {
     }
 
     private fun onCategoryClick() {
-       myAdapter.onItemClicked(object : CategoriesRecyclerAdapter.OnItemCategoryClicked{
+       myAdapter.onItemClicked(object : CategoriesAdapter.OnItemCategoryClicked{
            override fun onClickListener(category: Category) {
                val intent = Intent(context, MealActivity::class.java)
                intent.putExtra(CATEGORY_NAME,category.strCategory)
@@ -58,7 +57,7 @@ class CategoryFragment : Fragment(R.layout.fragment_category) {
     }
 
     private fun observeCategories() {
-        categoryMvvm.observeCategories().observe(viewLifecycleOwner,object : Observer<List<Category>>{
+        categoryViewModel.observeCategories().observe(viewLifecycleOwner,object : Observer<List<Category>>{
             override fun onChanged(t: List<Category>?) {
                 myAdapter.setCategoryList(t!!)
             }

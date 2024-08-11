@@ -1,7 +1,7 @@
 package com.example.easyfood.data.db
 
 import androidx.lifecycle.LiveData
-import com.example.easyfood.data.pojo.MealDB
+import com.example.easyfood.data.Models.MealDB
 
 class Repository(private val mealDao: Dao) {
 

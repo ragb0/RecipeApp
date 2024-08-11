@@ -50,7 +50,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/myfont"
-                        android:text="Home"
+                        android:text="@string/home"
                         android:textColor="@color/accent"
                         android:textSize="25sp"
                         android:textStyle="bold" />
@@ -71,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/myfont"
-                    android:text="What would you like to eat"
+                    android:text="@string/what_would_you_like_to_eat"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -100,40 +100,19 @@
                         android:src="@drawable/mealtest" />
                 </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:id="@+id/tv_over_pup_items"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="18dp"
-                    android:fontFamily="@font/myfont"
-                    android:text="over popular items"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="@id/tv_would_like_to_eat"
-                    app:layout_constraintTop_toBottomOf="@id/random_meal" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rec_view_meals_popular"
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginEnd="10dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tv_over_pup_items" />
-
-                <TextView
+                 <TextView
                     android:id="@+id/tv_category"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/myfont"
-                    android:text="category"
+                    android:text="@string/category"
                     android:textColor="@color/black"
                     android:textSize="20sp"
+                     android:layout_marginStart="16dp"
                     android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="@id/rec_view_meals_popular"
-                    app:layout_constraintTop_toBottomOf="@id/rec_view_meals_popular" />
+                     app:layout_constraintTop_toBottomOf="@+id/random_meal"
+                     app:layout_constraintStart_toStartOf="parent"/>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/category_card"
@@ -142,6 +121,7 @@
                     android:layout_marginStart="25dp"
                     android:layout_marginEnd="25dp"
                     android:elevation="2dp"
+                    android:layout_marginTop="8dp"
                     app:cardCornerRadius="10dp"
                     app:cardPreventCornerOverlap="false"
                     app:cardUseCompatPadding="true"
@@ -153,6 +133,7 @@
                         android:id="@+id/recycler_view"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
                         android:scrollbars="none" />
                 </androidx.cardview.widget.CardView>
             </androidx.constraintlayout.widget.ConstraintLayout>

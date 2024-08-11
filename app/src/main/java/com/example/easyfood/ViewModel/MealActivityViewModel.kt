@@ -1,17 +1,17 @@
-package com.example.easyfood.mvvm
+package com.example.easyfood.ViewModel
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.easyfood.data.pojo.Meal
-import com.example.easyfood.data.pojo.MealsResponse
-import com.example.easyfood.data.retrofit.RetrofitInstance
+import com.example.easyfood.data.Models.Meal
+import com.example.easyfood.data.Models.MealsResponse
+import com.example.easyfood.data.Retrofit.RetrofitInstance
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class MealActivityMVVM():ViewModel() {
+class MealActivityViewModel():ViewModel() {
     private var mutableMeal = MutableLiveData<List<Meal>>()
 
     fun getMealsByCategory(category:String){

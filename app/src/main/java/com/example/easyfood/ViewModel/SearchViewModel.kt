@@ -1,4 +1,4 @@
-package com.example.easyfood.mvvm
+package com.example.easyfood.ViewModel
 
 import android.content.Context
 import android.util.Log
@@ -6,14 +6,14 @@ import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.easyfood.data.pojo.MealDetail
-import com.example.easyfood.data.pojo.RandomMealResponse
-import com.example.easyfood.data.retrofit.RetrofitInstance
+import com.example.easyfood.data.Models.MealDetail
+import com.example.easyfood.data.Models.RandomMealResponse
+import com.example.easyfood.data.Retrofit.RetrofitInstance
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class SearchMVVM : ViewModel() {
+class SearchViewModel : ViewModel() {
     private var searchedMealLiveData = MutableLiveData<MealDetail>()
 
 

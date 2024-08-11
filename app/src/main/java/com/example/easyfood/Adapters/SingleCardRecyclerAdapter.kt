@@ -1,10 +1,10 @@
-package com.example.easyfood.adapters
+package com.example.easyfood.Adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.easyfood.data.pojo.Meal
+import com.example.easyfood.data.Models.Meal
 import com.example.easyfood.databinding.SingleMealCardBinding
 
 class SingleCardRecyclerAdapter():RecyclerView.Adapter<SingleCardRecyclerAdapter.SingleMealViewHolder>() {

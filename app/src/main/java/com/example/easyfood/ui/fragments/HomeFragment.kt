@@ -12,18 +12,16 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.ItemTouchHelper
-import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.easyfood.R
-import com.example.easyfood.adapters.CategoriesRecyclerAdapter
-import com.example.easyfood.adapters.MostPopularRecyclerAdapter
-import com.example.easyfood.adapters.OnItemClick
-import com.example.easyfood.adapters.OnLongItemClick
-import com.example.easyfood.data.pojo.*
+import com.example.easyfood.Adapters.CategoriesAdapter
+import com.example.easyfood.Adapters.MostPopularRecyclerAdapter
+import com.example.easyfood.Adapters.OnItemClick
+import com.example.easyfood.Adapters.OnLongItemClick
+import com.example.easyfood.data.Models.*
 import com.example.easyfood.databinding.FragmentHomeBinding
-import com.example.easyfood.mvvm.DetailsMVVM
-import com.example.easyfood.mvvm.MainFragMVVM
+import com.example.easyfood.ViewModel.DetailsViewModel
+import com.example.easyfood.ViewModel.MainFragMVVM
 import com.example.easyfood.ui.activites.MealActivity
 import com.example.easyfood.ui.MealBottomDialog
 import com.example.easyfood.ui.activites.MealDetailesActivity
@@ -33,7 +31,7 @@ import com.example.easyfood.ui.activites.MealDetailesActivity
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
     private lateinit var meal: RandomMealResponse
-    private lateinit var detailMvvm: DetailsMVVM
+    private lateinit var detailViewModel: DetailsViewModel
     private var randomMealId = ""
 
 
@@ -50,16 +48,16 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
 
 
-    private lateinit var myAdapter: CategoriesRecyclerAdapter
+    private lateinit var myAdapter: CategoriesAdapter
     private lateinit var mostPopularFoodAdapter: MostPopularRecyclerAdapter
     lateinit var binding: FragmentHomeBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        detailMvvm = ViewModelProviders.of(this)[DetailsMVVM::class.java]
+        detailViewModel = ViewModelProviders.of(this)[DetailsViewModel::class.java]
         binding = FragmentHomeBinding.inflate(layoutInflater)
-        myAdapter = CategoriesRecyclerAdapter()
+        myAdapter = CategoriesAdapter()
         mostPopularFoodAdapter = MostPopularRecyclerAdapter()
     }
 
@@ -78,7 +76,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
 
         prepareCategoryRecyclerView()
-        preparePopularMeals()
         onRndomMealClick()
         onRandomLongClick()
 
@@ -93,8 +90,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         })
 
-        mainFragMVVM.observeCategories().observe(viewLifecycleOwner, object : Observer<CategoryResponse> {
-            override fun onChanged(t: CategoryResponse?) {
+        mainFragMVVM.observeCategories().observe(viewLifecycleOwner, object : Observer<CategoryList> {
+            override fun onChanged(t: CategoryList?) {
                 val categories = t!!.categories
                 setCategoryAdapter(categories)
 
@@ -125,7 +122,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         })
 
-        myAdapter.onItemClicked(object : CategoriesRecyclerAdapter.OnItemCategoryClicked {
+        myAdapter.onItemClicked(object : CategoriesAdapter.OnItemCategoryClicked {
             override fun onClickListener(category: Category) {
                 val intent = Intent(activity, MealActivity::class.java)
                 intent.putExtra(CATEGORY_NAME, category.strCategory)
@@ -136,12 +133,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         mostPopularFoodAdapter.setOnLongCLickListener(object : OnLongItemClick {
             override fun onItemLongClick(meal: Meal) {
-                detailMvvm.getMealByIdBottomSheet(meal.idMeal)
+                detailViewModel.getMealByIdBottomSheet(meal.idMeal)
             }
 
         })
 
-        detailMvvm.observeMealBottomSheet()
+        detailViewModel.observeMealBottomSheet()
             .observe(viewLifecycleOwner, object : Observer<List<MealDetail>> {
                 override fun onChanged(t: List<MealDetail>?) {
                     val bottomSheetFragment = MealBottomDialog()
@@ -183,7 +180,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         binding.randomMeal.setOnLongClickListener(object : View.OnLongClickListener {
             override fun onLongClick(p0: View?): Boolean {
-                detailMvvm.getMealByIdBottomSheet(randomMealId)
+                detailViewModel.getMealByIdBottomSheet(randomMealId)
                 return true
             }
 
@@ -196,8 +193,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
             tvWouldLikeToEat.visibility = View.INVISIBLE
             randomMeal.visibility = View.INVISIBLE
-            tvOverPupItems.visibility = View.INVISIBLE
-            recViewMealsPopular.visibility = View.INVISIBLE
             tvCategory.visibility = View.INVISIBLE
             categoryCard.visibility = View.INVISIBLE
             loadingGif.visibility = View.VISIBLE
@@ -211,8 +206,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             header.visibility = View.VISIBLE
             tvWouldLikeToEat.visibility = View.VISIBLE
             randomMeal.visibility = View.VISIBLE
-            tvOverPupItems.visibility = View.VISIBLE
-            recViewMealsPopular.visibility = View.VISIBLE
             tvCategory.visibility = View.VISIBLE
             categoryCard.visibility = View.VISIBLE
             loadingGif.visibility = View.INVISIBLE
@@ -235,12 +228,4 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             layoutManager = GridLayoutManager(context, 3, GridLayoutManager.VERTICAL, false)
         }
     }
-
-    private fun preparePopularMeals() {
-        binding.recViewMealsPopular.apply {
-            adapter = mostPopularFoodAdapter
-            layoutManager = GridLayoutManager(context, 1, GridLayoutManager.HORIZONTAL, false)
-        }
-    }
-
 }

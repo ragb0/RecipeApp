@@ -10,7 +10,7 @@ import androidx.room.SharedSQLiteStatement;
 import androidx.room.util.CursorUtil;
 import androidx.room.util.DBUtil;
 import androidx.sqlite.db.SupportSQLiteStatement;
-import com.example.easyfood.data.pojo.MealDB;
+import com.example.easyfood.data.Models.MealDB;
 import java.lang.Class;
 import java.lang.Exception;
 import java.lang.Override;
