@@ -1,0 +1,186 @@
+[
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/layout_single_meal_card.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/layout/single_meal_card.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/drawable_ic_search.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.easyfood.app-main-32:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.easyfood.app-pngs-26:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.easyfood.app-main-32:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/layout_bottom_sheet_dialog.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/layout/bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/navigation_nav_board.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/navigation/nav_board.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/drawable_ic_saved.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/drawable/ic_saved.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/layout_activity_categories.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/layout/activity_categories.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/drawable_ic_area.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/drawable/ic_area.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/layout_category_card.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/layout/category_card.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/drawable_ic_filled_fav.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/drawable/ic_filled_fav.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.easyfood.app-main-32:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.easyfood.app-main-32:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/drawable_bottom_sheet_dialog_shape.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/drawable/bottom_sheet_dialog_shape.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/drawable-v24_mealtest.png.flat",
+        "source": "com.example.easyfood.app-main-32:/drawable-v24/mealtest.png"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/drawable_ic_home.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/layout_fragment_category.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/layout/fragment_category.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.easyfood.app-main-32:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.easyfood.app-main-32:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/drawable_ic_fav.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/drawable/ic_fav.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/layout_most_popular_card.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/layout/most_popular_card.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/layout_activity_meal_detailes.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/layout/activity_meal_detailes.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/layout_fragment_home.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/drawable_ic_category.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/drawable/ic_category.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.easyfood.app-main-32:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/layout_category_bottom_fragment.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/layout/category_bottom_fragment.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/layout_fragment_search.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/layout/fragment_search.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/layout_fav_meal_card.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/layout/fav_meal_card.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/font_myfont.ttf.flat",
+        "source": "com.example.easyfood.app-main-32:/font/myfont.ttf"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.easyfood.app-main-32:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/drawable-v24_yt_icon.png.flat",
+        "source": "com.example.easyfood.app-main-32:/drawable-v24/yt_icon.png"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/layout_fragment_favorite_meals.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/layout/fragment_favorite_meals.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/drawable_ic_baseline_save_24.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/drawable/ic_baseline_save_24.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/layout_meal_card.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/layout/meal_card.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.easyfood.app-main-32:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/layout_activity_main.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/drawable_content_style.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/drawable/content_style.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.easyfood.app-main-32:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/drawable_ic_baseline_search_24.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/drawable/ic_baseline_search_24.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/drawable-v24_loading_gif.gif.flat",
+        "source": "com.example.easyfood.app-main-32:/drawable-v24/loading_gif.gif"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/menu_bottom_nevigation.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/menu/bottom_nevigation.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-merged_res-30:/drawable_search_box_background.xml.flat",
+        "source": "com.example.easyfood.app-main-32:/drawable/search_box_background.xml"
+    }
+]

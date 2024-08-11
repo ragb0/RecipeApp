@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/most_popular_card.xml",
+        "source": "com.example.easyfood.app-main-32:/layout/most_popular_card.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/category_card.xml",
+        "source": "com.example.easyfood.app-main-32:/layout/category_card.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/single_meal_card.xml",
+        "source": "com.example.easyfood.app-main-32:/layout/single_meal_card.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/fragment_search.xml",
+        "source": "com.example.easyfood.app-main-32:/layout/fragment_search.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/bottom_sheet_dialog.xml",
+        "source": "com.example.easyfood.app-main-32:/layout/bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/meal_card.xml",
+        "source": "com.example.easyfood.app-main-32:/layout/meal_card.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/fav_meal_card.xml",
+        "source": "com.example.easyfood.app-main-32:/layout/fav_meal_card.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/activity_categories.xml",
+        "source": "com.example.easyfood.app-main-32:/layout/activity_categories.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/category_bottom_fragment.xml",
+        "source": "com.example.easyfood.app-main-32:/layout/category_bottom_fragment.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/activity_main.xml",
+        "source": "com.example.easyfood.app-main-32:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/activity_meal_detailes.xml",
+        "source": "com.example.easyfood.app-main-32:/layout/activity_meal_detailes.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/fragment_home.xml",
+        "source": "com.example.easyfood.app-main-32:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/fragment_category.xml",
+        "source": "com.example.easyfood.app-main-32:/layout/fragment_category.xml"
+    },
+    {
+        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/fragment_favorite_meals.xml",
+        "source": "com.example.easyfood.app-main-32:/layout/fragment_favorite_meals.xml"
+    }
+]
