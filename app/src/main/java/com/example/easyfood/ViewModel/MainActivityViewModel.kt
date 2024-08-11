@@ -1,9 +1,9 @@
-package com.example.easyfood.mvvm
+package com.example.easyfood.ViewModel
 
 import android.util.Log
 import androidx.lifecycle.*
-import com.example.easyfood.data.pojo.*
-import com.example.easyfood.data.retrofit.RetrofitInstance
+import com.example.easyfood.data.Models.*
+import com.example.easyfood.data.Retrofit.RetrofitInstance
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -11,7 +11,7 @@ import retrofit2.Response
 const val TAG = "MainMVVM"
 
 class MainFragMVVM: ViewModel() {
-    private val mutableCategory = MutableLiveData<CategoryResponse>()
+    private val mutableCategory = MutableLiveData<CategoryList>()
     private val mutableRandomMeal = MutableLiveData<RandomMealResponse>()
     private val mutableMealsByCategory = MutableLiveData<MealsResponse>()
 
@@ -24,12 +24,12 @@ class MainFragMVVM: ViewModel() {
 
 
     private fun getAllCategories() {
-        RetrofitInstance.foodApi.getCategories().enqueue(object : Callback<CategoryResponse> {
-            override fun onResponse(call: Call<CategoryResponse>, response: Response<CategoryResponse>) {
+        RetrofitInstance.foodApi.getCategories().enqueue(object : Callback<CategoryList> {
+            override fun onResponse(call: Call<CategoryList>, response: Response<CategoryList>) {
                 mutableCategory.value = response.body()
             }
 
-            override fun onFailure(call: Call<CategoryResponse>, t: Throwable) {
+            override fun onFailure(call: Call<CategoryList>, t: Throwable) {
                 Log.d(TAG, t.message.toString())
             }
         })
@@ -70,7 +70,7 @@ class MainFragMVVM: ViewModel() {
         return mutableRandomMeal
     }
 
-    fun observeCategories(): LiveData<CategoryResponse> {
+    fun observeCategories(): LiveData<CategoryList> {
         return mutableCategory
     }
 

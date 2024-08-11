@@ -4,8 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.easyfood.data.pojo.MealDB
-import com.example.easyfood.data.pojo.MealDetail
+import com.example.easyfood.data.Models.MealDB
 
 @Database(entities = [MealDB::class], version = 6)
 abstract class MealsDatabase : RoomDatabase() {

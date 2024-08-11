@@ -1,14 +1,14 @@
-package com.example.easyfood.mvvm
+package com.example.easyfood.ViewModel
 
 import android.app.Application
 import android.util.Log
 import androidx.lifecycle.*
 import com.example.easyfood.data.db.MealsDatabase
 import com.example.easyfood.data.db.Repository
-import com.example.easyfood.data.pojo.MealDB
-import com.example.easyfood.data.pojo.MealDetail
-import com.example.easyfood.data.pojo.RandomMealResponse
-import com.example.easyfood.data.retrofit.RetrofitInstance
+import com.example.easyfood.data.Models.MealDB
+import com.example.easyfood.data.Models.MealDetail
+import com.example.easyfood.data.Models.RandomMealResponse
+import com.example.easyfood.data.Retrofit.RetrofitInstance
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
@@ -17,7 +17,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class DetailsMVVM(application: Application) : AndroidViewModel(application) {
+class DetailsViewModel(application: Application) : AndroidViewModel(application) {
     private val mutableMealDetail = MutableLiveData<List<MealDetail>>()
     private val mutableMealBottomSheet = MutableLiveData<List<MealDetail>>()
     private  var allMeals: LiveData<List<MealDB>>

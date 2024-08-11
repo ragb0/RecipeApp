@@ -1,13 +1,13 @@
-package com.example.easyfood.adapters
+package com.example.easyfood.Adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.easyfood.data.pojo.Category
+import com.example.easyfood.data.Models.Category
 import com.example.easyfood.databinding.CategoryCardBinding
 
-class CategoriesRecyclerAdapter : RecyclerView.Adapter<CategoriesRecyclerAdapter.CategoryViewHolder>() {
+class CategoriesAdapter : RecyclerView.Adapter<CategoriesAdapter.CategoryViewHolder>() {
     private var categoryList:List<Category> = ArrayList()
     private lateinit var onItemClick: OnItemCategoryClicked
     private lateinit var onLongCategoryClick:OnLongCategoryClick

@@ -1,14 +1,14 @@
-package com.example.easyfood.data.retrofit
+package com.example.easyfood.data.Retrofit
 
-import com.example.easyfood.data.pojo.*
+import com.example.easyfood.data.Models.*
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
 
 
-interface FoodApi {
+interface ApiFood {
     @GET("categories.php")
-    fun getCategories(): Call<CategoryResponse>
+    fun getCategories(): Call<CategoryList>
 
     @GET("filter.php?")
     fun getMealsByCategory(@Query("i") category:String):Call<MealsResponse>

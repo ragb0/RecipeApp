@@ -1,17 +1,17 @@
-package com.example.easyfood.mvvm
+package com.example.easyfood.ViewModel
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.easyfood.data.pojo.CategoryResponse
-import com.example.easyfood.data.pojo.Category
-import com.example.easyfood.data.retrofit.RetrofitInstance
+import com.example.easyfood.data.Models.CategoryList
+import com.example.easyfood.data.Models.Category
+import com.example.easyfood.data.Retrofit.RetrofitInstance
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class CategoryMVVM : ViewModel() {
+class CategoryViewModel : ViewModel() {
     private var categories: MutableLiveData<List<Category>> = MutableLiveData<List<Category>>()
 
     init {
@@ -19,12 +19,12 @@ class CategoryMVVM : ViewModel() {
     }
 
     private fun getCategories(){
-        RetrofitInstance.foodApi.getCategories().enqueue(object : Callback<CategoryResponse>{
-            override fun onResponse(call: Call<CategoryResponse>, response: Response<CategoryResponse>) {
+        RetrofitInstance.foodApi.getCategories().enqueue(object : Callback<CategoryList>{
+            override fun onResponse(call: Call<CategoryList>, response: Response<CategoryList>) {
                 categories.value = response.body()!!.categories
             }
 
-            override fun onFailure(call: Call<CategoryResponse>, t: Throwable) {
+            override fun onFailure(call: Call<CategoryList>, t: Throwable) {
                 Log.d(TAG,t.message.toString())
             }
 
