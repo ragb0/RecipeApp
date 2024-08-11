@@ -196,7 +196,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             tvCategory.visibility = View.INVISIBLE
             categoryCard.visibility = View.INVISIBLE
             loadingGif.visibility = View.VISIBLE
-            rootHome.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.g_loading))
+            rootHome.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.Darkred))
 
         }
     }

@@ -67,7 +67,7 @@ class MealActivity : AppCompatActivity() {
     private fun startLoading() {
         binding.apply {
             loadingGifMeals.visibility = View.VISIBLE
-            mealRoot.setBackgroundColor(ContextCompat.getColor(applicationContext,R.color.g_loading))
+            mealRoot.setBackgroundColor(ContextCompat.getColor(applicationContext,R.color.white))
         }
     }
 

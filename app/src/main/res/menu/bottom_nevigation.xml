@@ -13,6 +13,16 @@
 
     <item android:title="Category"
         android:icon="@drawable/ic_category"
-        android:id="@+id/categoryFragment"
+        android:id="@+id/categoryFragment" />
+
+
+    <item android:title="About Us"
+        android:icon="@drawable/baseline_question_mark_24"
+        android:id="@+id/AboutUs"
+        />
+
+    <item android:title="log out"
+        android:icon="@drawable/baseline_output_24"
+        android:id="@+id/LogOut"
         />
 </menu>

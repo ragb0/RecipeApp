@@ -1,58 +1,78 @@
 [
     {
-        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/most_popular_card.xml",
-        "source": "com.example.easyfood.app-main-32:/layout/most_popular_card.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\bottom_sheet_dialog.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\bottom_sheet_dialog.xml"
     },
     {
-        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/category_card.xml",
-        "source": "com.example.easyfood.app-main-32:/layout/category_card.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\single_meal_card.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\single_meal_card.xml"
     },
     {
-        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/single_meal_card.xml",
-        "source": "com.example.easyfood.app-main-32:/layout/single_meal_card.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\most_popular_card.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\most_popular_card.xml"
     },
     {
-        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/fragment_search.xml",
-        "source": "com.example.easyfood.app-main-32:/layout/fragment_search.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\category_card.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\category_card.xml"
     },
     {
-        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/bottom_sheet_dialog.xml",
-        "source": "com.example.easyfood.app-main-32:/layout/bottom_sheet_dialog.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\fragment_search.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\fragment_search.xml"
     },
     {
-        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/meal_card.xml",
-        "source": "com.example.easyfood.app-main-32:/layout/meal_card.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\fragment_favorite_meals.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\fragment_favorite_meals.xml"
     },
     {
-        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/fav_meal_card.xml",
-        "source": "com.example.easyfood.app-main-32:/layout/fav_meal_card.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\activity_meal_detailes.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\activity_meal_detailes.xml"
     },
     {
-        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/activity_categories.xml",
-        "source": "com.example.easyfood.app-main-32:/layout/activity_categories.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\activity_categories.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\activity_categories.xml"
     },
     {
-        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/category_bottom_fragment.xml",
-        "source": "com.example.easyfood.app-main-32:/layout/category_bottom_fragment.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\fragment_register.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\fragment_register.xml"
     },
     {
-        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/activity_main.xml",
-        "source": "com.example.easyfood.app-main-32:/layout/activity_main.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\fav_meal_card.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\fav_meal_card.xml"
     },
     {
-        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/activity_meal_detailes.xml",
-        "source": "com.example.easyfood.app-main-32:/layout/activity_meal_detailes.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\meal_card.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\meal_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\fragment_login.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\category_bottom_fragment.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\category_bottom_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\fragment_splash.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\fragment_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\activity_auth.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\activity_auth.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\fragment_category.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\fragment_category.xml"
     },
     {
         "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/fragment_home.xml",
         "source": "com.example.easyfood.app-main-32:/layout/fragment_home.xml"
     },
     {
-        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/fragment_category.xml",
-        "source": "com.example.easyfood.app-main-32:/layout/fragment_category.xml"
-    },
-    {
-        "merged": "com.example.easyfood.app-mergeDebugResources-29:/layout/fragment_favorite_meals.xml",
-        "source": "com.example.easyfood.app-main-32:/layout/fragment_favorite_meals.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-mergeDebugResources-29:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0.2\\com.example.easyfood.app-main-32:\\layout\\activity_main.xml"
     }
 ]

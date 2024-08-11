@@ -46,9 +46,6 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final CardView randomMeal;
 
   @NonNull
-  public final RecyclerView recViewMealsPopular;
-
-  @NonNull
   public final RecyclerView recyclerView;
 
   @NonNull
@@ -61,18 +58,14 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final TextView tvHome;
 
   @NonNull
-  public final TextView tvOverPupItems;
-
-  @NonNull
   public final TextView tvWouldLikeToEat;
 
   private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull CardView categoryCard,
       @NonNull ConstraintLayout contraint, @NonNull LinearLayout header,
       @NonNull ImageView imgRandomMeal, @NonNull ImageView imgSearch,
       @NonNull GifImageView loadingGif, @NonNull CardView randomMeal,
-      @NonNull RecyclerView recViewMealsPopular, @NonNull RecyclerView recyclerView,
-      @NonNull ConstraintLayout rootHome, @NonNull TextView tvCategory, @NonNull TextView tvHome,
-      @NonNull TextView tvOverPupItems, @NonNull TextView tvWouldLikeToEat) {
+      @NonNull RecyclerView recyclerView, @NonNull ConstraintLayout rootHome,
+      @NonNull TextView tvCategory, @NonNull TextView tvHome, @NonNull TextView tvWouldLikeToEat) {
     this.rootView = rootView;
     this.categoryCard = categoryCard;
     this.contraint = contraint;
@@ -81,12 +74,10 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.imgSearch = imgSearch;
     this.loadingGif = loadingGif;
     this.randomMeal = randomMeal;
-    this.recViewMealsPopular = recViewMealsPopular;
     this.recyclerView = recyclerView;
     this.rootHome = rootHome;
     this.tvCategory = tvCategory;
     this.tvHome = tvHome;
-    this.tvOverPupItems = tvOverPupItems;
     this.tvWouldLikeToEat = tvWouldLikeToEat;
   }
 
@@ -159,12 +150,6 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.rec_view_meals_popular;
-      RecyclerView recViewMealsPopular = ViewBindings.findChildViewById(rootView, id);
-      if (recViewMealsPopular == null) {
-        break missingId;
-      }
-
       id = R.id.recycler_view;
       RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
       if (recyclerView == null) {
@@ -185,12 +170,6 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tv_over_pup_items;
-      TextView tvOverPupItems = ViewBindings.findChildViewById(rootView, id);
-      if (tvOverPupItems == null) {
-        break missingId;
-      }
-
       id = R.id.tv_would_like_to_eat;
       TextView tvWouldLikeToEat = ViewBindings.findChildViewById(rootView, id);
       if (tvWouldLikeToEat == null) {
@@ -198,8 +177,8 @@ public final class FragmentHomeBinding implements ViewBinding {
       }
 
       return new FragmentHomeBinding((ConstraintLayout) rootView, categoryCard, contraint, header,
-          imgRandomMeal, imgSearch, loadingGif, randomMeal, recViewMealsPopular, recyclerView,
-          rootHome, tvCategory, tvHome, tvOverPupItems, tvWouldLikeToEat);
+          imgRandomMeal, imgSearch, loadingGif, randomMeal, recyclerView, rootHome, tvCategory,
+          tvHome, tvWouldLikeToEat);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

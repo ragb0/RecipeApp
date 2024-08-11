@@ -1,8 +1,14 @@
 <resources>
     <string name="app_name">Easy food</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="what_would_you_like_to_eat">What would you like to eat</string>
     <string name="category">Category</string>
     <string name="home">Home</string>
+
+    <string name="RecipeApp">Recipe App</string>
+    <string name="username">UserName</string>
+    <string name="login">Login</string>
+    <string name="register">Register Here</string>
+    <string name="login_here">Login here</string>
 </resources>

@@ -4,7 +4,7 @@
             "outputFile": "com.example.easyfood.app-mergeDebugResources-28:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\pc\\AndroidStudioProjects\\caches\\transforms-3\\8e3bd8ed8770aecda79f70253f4619b8\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-3\\56cdc1a7f72d6f8ef71238f8a21ed305\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\pc\\AndroidStudioProjects\\caches\\transforms-3\\566b536297ccea891ce67026dbf8146f\\transformed\\appcompat-1.3.1\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-3\\7e6f1824b412e9027df4abbf6367efa4\\transformed\\appcompat-1.3.1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\pc\\AndroidStudioProjects\\caches\\transforms-3\\1e2230888e1c35f19711898f9ebf99e3\\transformed\\material-1.4.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-3\\85f205b7e765be7cc9267eaf89b1f4fd\\transformed\\material-1.4.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,6",
                         "startColumns": "4,4",

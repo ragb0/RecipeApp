@@ -92,7 +92,7 @@ public final class MealsDatabase_Impl extends MealsDatabase {
         final TableInfo _infoMealInformation = new TableInfo("meal_information", _columnsMealInformation, _foreignKeysMealInformation, _indicesMealInformation);
         final TableInfo _existingMealInformation = TableInfo.read(_db, "meal_information");
         if (! _infoMealInformation.equals(_existingMealInformation)) {
-          return new RoomOpenHelper.ValidationResult(false, "meal_information(com.example.easyfood.data.pojo.MealDB).\n"
+          return new RoomOpenHelper.ValidationResult(false, "meal_information(com.example.easyfood.data.Models.MealDB).\n"
                   + " Expected:\n" + _infoMealInformation + "\n"
                   + " Found:\n" + _existingMealInformation);
         }

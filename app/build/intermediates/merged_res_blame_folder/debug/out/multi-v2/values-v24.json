@@ -4,7 +4,7 @@
             "outputFile": "com.example.easyfood.app-mergeDebugResources-28:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\pc\\AndroidStudioProjects\\caches\\transforms-3\\566b536297ccea891ce67026dbf8146f\\transformed\\appcompat-1.3.1\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-3\\7e6f1824b412e9027df4abbf6367efa4\\transformed\\appcompat-1.3.1\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\pc\\AndroidStudioProjects\\caches\\transforms-3\\0da5aa29873190a2e2fb4ee372648ac8\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-3\\df5c26d19c5ff304d241a499fa1f1ffc\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

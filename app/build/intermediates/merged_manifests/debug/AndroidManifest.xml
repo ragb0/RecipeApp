@@ -14,7 +14,6 @@
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:extractNativeLibs="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -23,13 +22,16 @@
         android:theme="@style/Theme.EasyFood"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.easyfood.ui.activites.MainActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.easyfood.ui.activites.MealActivity"
             android:exported="false" />
         <activity
             android:name="com.example.easyfood.ui.activites.MealDetailesActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.easyfood.ui.activites.MainActivity"
+            android:name="com.example.easyfood.ui.activites.AuthActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
